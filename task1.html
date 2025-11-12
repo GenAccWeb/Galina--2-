@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои проекты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="about">
+            <h2>Обо мне</h2>
+            <img src="image.jpg" alt="Изображение" width="100">
+            <p>Привет! Меня зовут Галина, я занимаюсь веб-разработкой. Владею языками HTML, CSS и ещё много чего умею.</p>
+            <h3>Мои образования:</h3>
+            <ul>
+                <li>2020–2023: Университет информационных технологий</li>
+                <li>2019: Курсы по веб-разработке</li>
+            </ul>
+            <h3>Мои навыки:</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+            <h3>Уровень владения:</h3>
+            <ul>
+                <li>HTML — продвинутый</li>
+                <li>CSS — продвинутый</li>
+                <li>JavaScript — средний</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Мои проекты</h2>
+            <article>
+                <h3>Сайт-визитка</h3>
+                <p>Мой первый сайт, созданный на курсах.</p>
+                <a href="#" class="btn">Посмотреть проект</a>
+            </article>
+            <article>
+                <h3>Сайт портфолио</h3>
+                <p>Учебный проект с формой заявки.</p>
+                <a href="#" class="btn">Оформить заказ</a>
+            </article>
+
+            <h3>Форма обратной связи</h3>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Тема сообщения:</label>
+                <select id="topic" name="topic">
+                    <option value="question">Вопрос</option>
+                    <option value="suggestion">Предложение</option>
+                    <option value="complaint">Жалоба</option>
+                </select>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div>
+                    <label>
+                        <input type="checkbox" name="subscribe">
+                        Хочу получать новости о моих проектах
+                    </label>
+                </div>
+
+                <button type="submit">Отправить сообщение</button>
+                <button type="reset">Очистить форму</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
